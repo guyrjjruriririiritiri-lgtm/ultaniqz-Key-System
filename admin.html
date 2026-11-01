@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SULTANIQZ Admin</title><link rel="stylesheet" href="/style.css"></head>
+<body><main class="shell">
+<header class="topbar"><a class="brand" href="/">SULTANIQZ<span>.</span></a><span class="status">ADMIN PANEL</span></header>
+<section class="hero"><div class="eyebrow">PRIVATE CONTROL CENTER</div><h1>ADMIN <span>PANEL</span></h1><p class="muted">Manage your key system.</p></section>
+<section class="panel" id="loginPanel"><div class="panel-title">ADMIN LOGIN</div><input id="password" type="password" placeholder="Admin password"><button id="loginBtn" class="btn btn-red">LOGIN</button><p id="loginMsg" class="message"></p></section>
+<section class="panel hidden" id="dashboard">
+  <div class="panel-title">SYSTEM CONTROLS</div>
+  <div id="toggles"></div>
+  <label class="field-label">Key duration (hours)</label><input id="duration" type="number" min="1" max="8760">
+  <label class="field-label">Discord invite URL</label><input id="invite" placeholder="https://discord.gg/...">
+  <label class="field-label">Total unique users (manual adjustment)</label><input id="total" type="number" min="0">
+  <button id="saveBtn" class="btn btn-red">SAVE SETTINGS</button>
+  <button id="testBtn" class="btn btn-discord">TEST DISCORD</button>
+  <div class="or"><span></span> KEY MANAGEMENT <span></span></div>
+  <button id="newKeyBtn" class="btn btn-outline">GENERATE ADMIN KEY</button>
+  <div id="newKeyResult" class="message"></div>
+  <h3 class="subhead">RECENT KEYS</h3><div id="keys"></div>
+  <h3 class="subhead">RECENT ACTIVITY</h3><div id="logs"></div>
+  <button id="logoutBtn" class="btn btn-outline">LOG OUT</button>
+  <p id="adminMsg" class="message"></p>
+</section><footer>SULTANIQZ ADMIN · PRIVATE</footer></main><script src="/admin.js"></script></body></html>
